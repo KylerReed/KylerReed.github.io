@@ -7,3 +7,24 @@ h3 {
 p {
 }
 
+body {
+  font-family: Arial, sans-sarif;
+  margin: 0;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+}
+
+.content-box {
+  grid-colum: span 2;
+}
+  
