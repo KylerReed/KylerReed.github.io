@@ -1,40 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark">
 
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contact.html">Contact</a>
+  <header>
+    <h1>My Entertainment Site</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </nav>
-
-    <section class="hero">
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you or your feedback on how we can improve.</p>
-    </section>
-
-    <section class="grid">
-        <div class="content-box">
-            <h2>Get In Touch</h2>
-            <p>Email: info@example.com</p>
-            <p>Phone: (555) 123-4567</p>
-        </div>
-
-        <div class="content-box">
-            <h2>Call Us</h2>
-            <p>###-###-####</p>
-        </div>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
 
 
-    </section>
+  <section class="hero content-box">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you or your feedback on how we can improve.</p>
+  </section>
+
+  <section class="grid">
+    <div class="content-box">
+      <h2>Get In Touch</h2>
+      <p>Email: info@example.com</p>
+      <p>Phone: (555) 123-4567</p>
+    </div>
+
+    <div class="content-box">
+      <h2>Call Us</h2>
+      <p>###-###-####</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Entertainment Site. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      document.body.classList.toggle('dark');
+    });
+  </script>
 
 </body>
 </html>
