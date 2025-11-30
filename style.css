@@ -19,6 +19,8 @@ website/
     --text-muted: #b6b6b6;    
     --border-color: #333;    
     --radius: 10px;
+}
+
 
 body {
     font-family: Arial, sans-serif;
