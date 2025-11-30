@@ -2,62 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, inital-scale=1.0">
-  <title>Entertainment Website</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="dark">
 
+  <header>
+    <h1>My Entertainment Site</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
 
-<nav class="nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="services.html">Services</a>
-  <a href="gallery.html">Gallery</a>
-  <a href="contact.html">Contact</a>
-</nav>
+  <section class="hero content-box">
+    <h1>Welcome to My Entertainment Site</h1>
+    <p>Explore our creative projects, services, and everything we offer.</p>
+  </section>
 
-<header class="hero">
-  <h1>Website Layout</h1>
-  <p>The foundation of an effective website starts with the people involved</p>
-</header>
-
-<section class="grid">
-   <div class="box">
-        <h2>Actors</h2>
-        <p>Allowing for new actors to be selected for roles that could help them advance their career.</p>
+  <section class="grid">
+    <div class="content-box">
+      <h2>Featured Project</h2>
+      <p>Check out our latest work and what makes it stand out.</p>
     </div>
 
-    <div class="box">
-        <h2>Advertising</h2>
-        <p>Knowing how to advertise the website on social media can be very helpful.</p>
+    <div class="content-box">
+      <h2>Our Services</h2>
+      <p>From design to development, we help bring your ideas to life.</p>
     </div>
 
-    <div class="box">
-        <h2>Directors</h2>
-        <p>Finding young directors willing to learn and improve is crucial for good movies and shows.</p>
+    <div class="content-box">
+      <h2>Get in Touch</h2>
+      <p>Have questions or feedback? We’d love to hear from you.</p>
     </div>
+  </section>
 
-    <div class="box">
-        <h2>Website Design</h2>
-        <p>A small design team can add unique UI themes to improve interaction.</p>
-    </div>
 
-    <div class="box content-box">
-        <h2>Content</h2>
-        <p>This is where movies will be displayed by genres, new arrivals, and trending shows.</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 My Entertainment Site. All Rights Reserved.</p>
+  </footer>
 
-    <div class="box">
-        <h2>Screenwriters</h2>
-        <p>People who can bring visions to life through strong ideas and story planning.</p>
-    </div>
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('light');
+      document.body.classList.toggle('dark');
+    });
+  </script>
 
-    <div class="box">
-        <h2>Variety</h2>
-        <p>Offering many genres or themes helps prevent viewer boredom.</p>
-    </div>
-</section>
+</body>
+</html>
 
 </body>
 </html>
