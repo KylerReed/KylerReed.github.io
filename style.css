@@ -1,3 +1,15 @@
+website/
+│
+├── index.html
+├── about.html
+├── services.html
+├── gallery.html
+├── contact.html
+│
+└── styles.css
+
+
+
 :root {
     --bg-dark: #1e1e1e;
     --bg-light: #2a2a2a;
