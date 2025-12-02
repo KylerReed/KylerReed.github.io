@@ -1,0 +1,9 @@
+my-website-project/      ← THIS is the project folder
+│
+├── index.html
+├── about.html
+├── services.html
+├── gallery.html
+├── contact.html
+│
+└── styles.css
