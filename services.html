@@ -1,65 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark">
 
-  <!-- Header -->
-  <header>
-    <h1>My Entertainment Site</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" class="active">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+<body>
+
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
-    <button id="theme-toggle">Toggle Theme</button>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero content-box">
-    <h1>Our Services</h1>
-    <p>What we can do for you.</p>
-  </section>
+    <section class="hero">
+        <h1>Our Services</h1>
+        <p>See what we offer to elevate your digital presence.</p>
+    </section>
 
-  <!-- Grid Section -->
-  <section class="grid">
-    <div class="content-box">
-      <h2>Web Design</h2>
-      <p>A modern look that gives your product a place to shine.</p>
-    </div>
+    <section class="grid">
+        <div class="content-box">
+            <h2>Web Design</h2>
+            <p>High-quality custom websites built for any brand or industry.</p>
+        </div>
 
-    <div class="content-box">
-      <h2>Development</h2>
-      <p>Full-stack solutions to bring your vision to life.</p>
-    </div>
+        <div class="content-box">
+            <h2>Brand Identity</h2>
+            <p>Logos, typography, and visual systems built with care.</p>
+        </div>
 
-    <div class="content-box">
-      <h2>Brand Strategy</h2>
-      <p>Build an identity that stands out amongst others in an increasingly digital world.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 My Entertainment Site. All Rights Reserved.</p>
-  </footer>
-
-  <!-- Theme Toggle Script -->
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
-    toggleBtn.addEventListener('click', () => {
-      document.body.classList.toggle('light');
-      document.body.classList.toggle('dark');
-    });
-  </script>
+        <div class="content-box">
+            <h2>Content Creation</h2>
+            <p>Creative content aligned to your goals and customer needs.</p>
+        </div>
+    </section>
 
 </body>
 </html>
